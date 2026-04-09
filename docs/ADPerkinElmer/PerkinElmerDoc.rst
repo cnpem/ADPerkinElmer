@@ -14,8 +14,8 @@ silicon detectors from
 `Varex Imaging (previously Perkin Elmer) <https://www.vareximaging.com/products/security-industrial/security-industrial-flat-panel-detectors>`__.
  
 The driver is based upon the XISL library provided by the vendor. It
-only runs on Microsoft Windows computers. It supports both 32-bit and
-64-bit versions of Windows.
+runs on Microsoft Windows and GNU/Linux computers. It supports both
+32-bit and 64-bit versions of Windows, and 64-bit versions of GNU/Linux.
 
 This driver has been tested with the following detectors
 

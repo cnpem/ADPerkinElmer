@@ -2,6 +2,23 @@
 
 Here is where you should add your XISL SDK driver files.
 
+## Linux Instructions
+
+Unpack the tarball compatible with your Linux distribution from the `Linux/`
+folder of the XISL SDK.
+
+Then, copy the XISL shared object files and their symbolic links to the
+`linux-x86_64` directory:
+
+```bash
+cp -a /path/to/unpacked/tar/lib/lib*.so* ./os/linux-x86_64/
+```
+
+You should also copy additional libraries specific for your device if needed.
+For instance, for detectors that need the XRD-FGe Opto PCI-Express frame
+grabber, you need to also copy the `eleye500` library from
+`lib_eleye_XRD_FGe_OPTO` to `./os/linux-x86_64/`.
+
 ## Windows Instructions
 
 Copy the XISL SDK Windows library files from the `XISL` directory in the root
