@@ -26,6 +26,9 @@ Release Notes
 Unreleased
 ---
 
+* Add support for Linux x86_64
+  - The upgraded version of the SDK supports Linux with the same API as the
+    Windows version, which makes the driver promptly available for Linux.
 * Upgrade vendor SDK to X33.7.3316.27919
   - No code functional changes are expected with this new release, besides the
     support of new detectors, including XRD 1621xQ.

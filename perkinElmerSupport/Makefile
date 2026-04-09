@@ -16,6 +16,9 @@ else ifeq (windows-x64, $(findstring windows-x64, $(T_A)))
 LIB_INSTALLS_WIN32    += ../os/windows-x64/xisl.lib
 BIN_INSTALLS_WIN32    += $(wildcard ../os/windows-x64/*.dll)
 
+else ifeq (linux, $(findstring linux, $(T_A)))
+LIB_INSTALLS_Linux += $(wildcard ../os/linux-x86_64/lib*.so*)
+
 endif
 
 #=============================
