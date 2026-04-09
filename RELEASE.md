@@ -26,6 +26,9 @@ Release Notes
 Unreleased
 ---
 
+* Upgrade vendor SDK to X33.7.3316.27919
+  - No code functional changes are expected with this new release, besides the
+    support of new detectors, including XRD 1621xQ.
 * Delegate to users the installation of the compatible vendor SDK binaries
   - The number of shipped binaries by the vendor is increasing and becoming
     specific for the detector and Operating System used. This makes it inviable

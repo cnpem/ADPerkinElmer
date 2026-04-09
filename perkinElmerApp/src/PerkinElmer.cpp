@@ -443,7 +443,7 @@ bool PerkinElmer::initializeDetector(void)
       driverName, functionName, uiNumFrameBuffers_);
       return false;
   }
-#ifdef __X64
+#ifdef XIS_ARCH_64
   uiPEResult = Acquisition_SetAcqData(hAcqDesc_, (void *) this);
 #else
   uiPEResult = Acquisition_SetAcqData(hAcqDesc_, (DWORD) this);
@@ -772,7 +772,7 @@ static void CALLBACK endFrameCallbackC(HACQDESC hAcqDesc)
   DWORD         FGError;
   static const char *functionName = "endFrameCallbackC";
 
-#ifdef __X64
+#ifdef XIS_ARCH_64
   uiStatus =  Acquisition_GetAcqData(hAcqDesc, (void **) &pPerkinElmer);
 #else
   uiStatus =  Acquisition_GetAcqData(hAcqDesc, (DWORD *) &pPerkinElmer);
@@ -977,7 +977,7 @@ static void CALLBACK endAcqCallbackC(HACQDESC hAcqDesc)
   DWORD         FGError;
   static const char *functionName = "endAcqCallbackC";
 
-#ifdef __X64
+#ifdef XIS_ARCH_64
   uiStatus =  Acquisition_GetAcqData(hAcqDesc, (void **) &pPerkinElmer);
 #else
   uiStatus =  Acquisition_GetAcqData(hAcqDesc, (DWORD *) &pPerkinElmer);

@@ -18,7 +18,7 @@ $(PROD_NAME)_SRCS += $(PROD_NAME)_registerRecordDeviceDriver.cpp $(PROD_NAME)Mai
 $(PROD_NAME)_LIBS += PerkinElmer
 
 testBinning_SRCS += testBinning
-testBinning_LIBS += XISL
+testBinning_LIBS += xisl
 
 include $(ADCORE)/ADApp/commonDriverMakefile
 
