@@ -1,0 +1,14 @@
+services:
+  ioc:
+    image: ghcr.io/cnpem/adperkinelmer:$TAG
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+      target: dynamic-link
+      labels:
+        org.opencontainers.image.source: https://github.com/cnpem/ADPerkinElmer.git
+      args:
+        REPONAME: epics/modules/areaDetector/ADPerkinElmer
+        RUNDIR: /opt/epics/modules/areaDetector/ADPerkinElmer/iocs/perkinElmerIOC/iocBoot/iocPerkinElmer
+        RUNTIME_PACKAGES: libxml2 libtiff6 libcurl4-openssl-dev
+        ENTRYPOINT: ./st.cmd
