@@ -4,7 +4,7 @@ include $(TOP)/configure/CONFIG
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 
 PROD_NAME = PerkinElmerApp
-PROD_IOC_WIN32 += $(PROD_NAME)
+PROD_IOC += $(PROD_NAME)
 PROD_HOST_WIN32 += testBinning
 
 # <name>.dbd will be created from <name>Include.dbd
