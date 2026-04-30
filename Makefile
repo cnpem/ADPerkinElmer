@@ -9,7 +9,7 @@ DIRS := $(DIRS) perkinElmerSupport
 perkinElmerApp_DEPEND_DIRS += perkinElmerSupport
 endif
 
-ifeq ($(BUILD_IOCS), YES)
+ifeq (YES, YES)
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard iocs))
 iocs_DEPEND_DIRS += perkinElmerApp
 endif
