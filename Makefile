@@ -5,10 +5,8 @@ DIRS := $(DIRS) configure
 DIRS := $(DIRS) perkinElmerSupport
 DIRS := $(DIRS) perkinElmerApp
 perkinElmerApp_DEPEND_DIRS += perkinElmerSupport
-ifeq ($(BUILD_IOCS), YES)
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard iocs))
 iocs_DEPEND_DIRS += perkinElmerApp
-endif
 include $(TOP)/configure/RULES_TOP
 
 uninstall: uninstall_iocs
