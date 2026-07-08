@@ -16,7 +16,6 @@ $(PROD_NAME)_SRCS += $(PROD_NAME)_registerRecordDeviceDriver.cpp $(PROD_NAME)Mai
 
 # Add locally compiled object code
 $(PROD_NAME)_LIBS += PerkinElmer
-$(PROD_NAME)_LIBS += XISL
 
 testBinning_SRCS += testBinning
 testBinning_LIBS += XISL
