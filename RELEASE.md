@@ -26,6 +26,11 @@ Release Notes
 Unreleased
 ---
 
+* Delegate to users the installation of the compatible vendor SDK binaries
+  - The number of shipped binaries by the vendor is increasing and becoming
+    specific for the detector and Operating System used. This makes it inviable
+    to ship all supported options in the driver itself. Users should read the
+    [./perkinElmerSupport/README.md] for the SDK installation instructions.
 * Standardize references to the driver name to `PerkinElmer` in documentation,
   source code and `asynReport` output.
 * Update `Manufacturer_RBV` from `Perkin Elmer` to `Varex Imaging`.
