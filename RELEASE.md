@@ -22,6 +22,16 @@ files respectively, in the configure/ directory of the appropriate release of th
 
 Release Notes
 =============
+
+Unreleased
+---
+
+* Delegate to users the installation of the compatible vendor SDK binaries
+  - The number of shipped binaries by the vendor is increasing and becoming
+    specific for the detector and Operating System used. This makes it inviable
+    to ship all supported options in the driver itself. Users should read the
+    [./perkinElmerSupport/README.md] for the SDK installation instructions.
+
 R2-11 (22-January-2022)
 ----
 * Updated vendor files to those in XIS_Inst_Package_X33.5.1479.16862.zip.

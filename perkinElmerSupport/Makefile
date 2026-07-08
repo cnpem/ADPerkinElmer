@@ -6,7 +6,8 @@ include $(TOP)/configure/CONFIG
 
 INC += Acq.h
 
-# Note, the following files were manually copied from the Perkin Elmer distribution XISL SDK32 and SKD64 directories
+# Note, the following files should be manually copied from the manufacturer
+# distribution XISL SDK32 and SKD64 directories
 ifeq (win32-x86, $(findstring win32-x86, $(T_A)))
 LIB_INSTALLS_WIN32    += ../os/win32-x86/XISL.lib
 BIN_INSTALLS_WIN32    += ../os/win32-x86/XISL.dll
