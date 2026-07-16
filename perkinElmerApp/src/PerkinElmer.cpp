@@ -158,7 +158,7 @@ PerkinElmer::PerkinElmer(const char *portName,  int IDType, const char *IDValue,
   createParam(PE_TriggerOutEdgeString,              asynParamInt32,   &PE_TriggerOutEdge);
 
   /* Set some default values for parameters */
-  status =  setStringParam (ADManufacturer, "Perkin Elmer");
+  status =  setStringParam (ADManufacturer, "Varex Imaging");
   epicsSnprintf(versionString, sizeof(versionString), "%d.%d.%d", 
                 DRIVER_VERSION, DRIVER_REVISION, DRIVER_MODIFICATION);
   setStringParam(NDDriverVersion, versionString);

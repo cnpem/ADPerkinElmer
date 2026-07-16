@@ -28,6 +28,7 @@ Unreleased
 
 * Standardize references to the driver name to `PerkinElmer` in documentation,
   source code and `asynReport` output.
+* Update `Manufacturer_RBV` from `Perkin Elmer` to `Varex Imaging`.
 
 R2-11 (22-January-2022)
 ----
