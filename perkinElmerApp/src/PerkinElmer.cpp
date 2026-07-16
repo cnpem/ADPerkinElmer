@@ -1,6 +1,7 @@
  /* PerkinElmer.cpp
  *
- * This is a driver for the Perkin Elmer flat panel detectors
+ * This is a driver for the Varex Imaging (formely Perkin Elmer) flat panel
+ * detectors.
  *
  * It works with panels that are connected with frame grabbers (e.g. 0820, 1621) or
  * Gigabit Ethernet (e.g. 0822).
