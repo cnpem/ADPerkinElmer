@@ -13,7 +13,7 @@ This is an :doc:`../index` driver for the flat-panel amorphous
 silicon detectors from
 `Varex Imaging (previously Perkin Elmer) <https://www.vareximaging.com/products/security-industrial/security-industrial-flat-panel-detectors>`__.
  
-The driver is based upon the XISL library provided by Perkin Elmer. It
+The driver is based upon the XISL library provided by the vendor. It
 only runs on Microsoft Windows computers. It supports both 32-bit and
 64-bit versions of Windows.
 
@@ -30,8 +30,8 @@ It implements nearly all of the parameters in
 `asynNDArrayDriver.h <../areaDetectorDoxygenHTML/asyn_n_d_array_driver_8h.html>`__
 and in
 `ADArrayDriver.h <../areaDetectorDoxygenHTML/_a_d_driver_8h.html>`__. It
-also implements a number of parameters that are specific to the
-Perkin Elmer cameras. The `PerkinElmer class
+also implements a number of parameters that are specific to this vendor
+cameras. The `PerkinElmer class
 documentation <../areaDetectorDoxygenHTML/class_perkin_elmer.html>`__
 describes this class in detail.
 
@@ -267,7 +267,7 @@ Unsupported standard driver parameters
 --------------------------------------
 
 The PerkinElmer driver does not support the following standard driver
-parameters because they are not supported in the PerkinElmer library:
+parameters because they are not supported in the vendor library:
 
 -  Readout region (ADMinX, ADMinY, ADSizeX, ADSizeY)
 -  Type/Color (NDDataType, NDColorMode)
@@ -279,7 +279,7 @@ parameters because they are not supported in the PerkinElmer library:
 Synchronization and triggering
 ------------------------------
 
-The Perkin Elmer detectors support a number of acquisition modes which
+These detectors support a number of acquisition modes which
 are controlled by the TriggerMode, SyncMode, and AcquireTime records.
 This is a simplified discussion, and the reader should consult the `XIS
 software manual <1000952_Manual_XIS_Rev7.pdf>`__ and the detector
