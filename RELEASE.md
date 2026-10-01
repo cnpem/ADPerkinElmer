@@ -22,6 +22,13 @@ files respectively, in the configure/ directory of the appropriate release of th
 
 Release Notes
 =============
+
+Unreleased
+---
+
+* Standardize references to the driver name to `PerkinElmer` in documentation,
+  source code and `asynReport` output.
+
 R2-11 (22-January-2022)
 ----
 * Updated vendor files to those in XIS_Inst_Package_X33.5.1479.16862.zip.

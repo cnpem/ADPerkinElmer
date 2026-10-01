@@ -80,7 +80,7 @@ of the standard driver parameters.
       - Single
       - Multiple
       - Continuous
-      - Average This mode is new for the Perkin Elmer. It averages NumImages frames in
+      - Average This mode is new for the PerkinElmer. It averages NumImages frames in
         the hardware frame grabber. It is useful when the total acquisition time is longer
         than the 5 second maximum allowed in Internal trigger mode, etc.
 
