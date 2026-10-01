@@ -5,7 +5,12 @@ include $(TOP)/configure/CONFIG
 
 LIBRARY_IOC = PerkinElmer
 LIB_SRCS += PerkinElmer.cpp
+
+ifeq ($(SDK_EXTERNAL), NO)
 LIB_LIBS += xisl
+else
+LIB_SYS_LIBS += xisl
+endif
 
 DBD += PerkinElmerSupport.dbd
 

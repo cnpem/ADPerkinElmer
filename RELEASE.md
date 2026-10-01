@@ -37,6 +37,9 @@ Unreleased
     specific for the detector and Operating System used. This makes it inviable
     to ship all supported options in the driver itself. Users should read the
     [./perkinElmerSupport/README.md] for the SDK installation instructions.
+  - Enable users to opt in to building the EPICS driver based on an SDK
+    installed system-wide. Users interested in this installation method
+    should set `SDK_EXTERNAL=YES` in their `CONFIG_SITE`.
 * Standardize references to the driver name to `PerkinElmer` in documentation,
   source code and `asynReport` output.
 * Update `Manufacturer_RBV` from `Perkin Elmer` to `Varex Imaging`.

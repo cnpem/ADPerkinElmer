@@ -1,6 +1,9 @@
 # PerkinElmer Support
 
-Here is where you should add your XISL SDK driver files.
+Here is where you should add your XISL SDK driver files if you don't
+want to have a system installation of the SDK. If you'd rather have the
+compatible SDK installed system-wide, you should set `SDK_EXTERNAL=YES`
+in `CONFIG_SITE` and ignore this directory completely.
 
 ## Linux Instructions
 
