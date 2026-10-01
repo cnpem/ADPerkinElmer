@@ -2,9 +2,13 @@
 TOP = .
 include $(TOP)/configure/CONFIG
 DIRS := $(DIRS) configure
-DIRS := $(DIRS) perkinElmerSupport
 DIRS := $(DIRS) perkinElmerApp
+
+ifeq ($(SDK_EXTERNAL), NO)
+DIRS := $(DIRS) perkinElmerSupport
 perkinElmerApp_DEPEND_DIRS += perkinElmerSupport
+endif
+
 ifeq ($(BUILD_IOCS), YES)
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard iocs))
 iocs_DEPEND_DIRS += perkinElmerApp
