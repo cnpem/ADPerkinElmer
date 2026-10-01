@@ -55,7 +55,7 @@ static void exitCallbackC(void *drvPvt);
 
 //_____________________________________________________________________________________________
 
-/** Configuration command for PerkinElmer driver; creates a new PerkinElmer object.
+/** Configuration command for the driver; creates a new PerkinElmer object.
   * \param[in] portName The name of the asyn port driver to be created.
   * \param[in] IDType The type of system ID being specifed in IDValue.  Allowed values are:<br/>
   *  IDType = 0 Frame grabber card or directly connected GigE detector, IDValue = detector index # in system.<br/> 
@@ -80,7 +80,7 @@ extern "C" int PerkinElmerConfig(const char *portName, int IDType, const char *I
 }
 
 //_____________________________________________________________________________________________
-/** Constructor for PerkinElmer driver; most parameters are simply passed to ADDriver::ADDriver.
+/** Constructor for the driver; most parameters are simply passed to ADDriver::ADDriver.
   * After calling the base class constructor this method creates a thread to collect the detector data, 
   * and sets reasonable default values the parameters defined in this class, asynNDArrayDriver, and ADDriver.
   * \param[in] portName The name of the asyn port driver to be created.
@@ -212,7 +212,7 @@ static void exitCallbackC(void *pPvt)
 }
 
 //_____________________________________________________________________________________________
-/** Destructor for Perkin Elmer driver; most parameters are simply passed to ADDriver::ADDriver.
+/** Destructor for the driver; most parameters are simply passed to ADDriver::ADDriver.
  * Frees all resources and calls Acquisition_Close() */
 
 PerkinElmer::~PerkinElmer()
@@ -679,7 +679,7 @@ void PerkinElmer::report(FILE *fp, int details)
 }
 
 //_____________________________________________________________________________________________
-/** Report information about all local and network Perkin Elmer detectors */
+/** Report information about all local and network detectors supported by the driver */
 void PerkinElmer::reportSensors(FILE *fp, int details)
 {
   ACQDESCPOS Pos = 0;
