@@ -3,6 +3,7 @@ services:
     image: ghcr.io/cnpem/adperkinelmer:$TAG
     build:
       context: ./
+      network: host
       dockerfile: docker/Dockerfile
       target: dynamic-link
       labels:
@@ -10,5 +11,7 @@ services:
       args:
         REPONAME: epics/modules/areaDetector/ADPerkinElmer
         RUNDIR: /opt/epics/modules/areaDetector/ADPerkinElmer/iocs/perkinElmerIOC/iocBoot/iocPerkinElmer
+        BUILD_TAR_PACKAGES: http://[::1]:8888/installed.tar.gz 75636ddf721b7cc5b4c71d776e03d923164832167a2d4af9ee7a8ae80c5dc994
         RUNTIME_PACKAGES: libxml2 libtiff6 libcurl4-openssl-dev
+        RUNTIME_TAR_PACKAGES: http://[::1]:8888/installed.tar.gz 75636ddf721b7cc5b4c71d776e03d923164832167a2d4af9ee7a8ae80c5dc994
         ENTRYPOINT: ./st.cmd
