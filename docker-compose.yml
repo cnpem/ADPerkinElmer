@@ -12,6 +12,6 @@ services:
         REPONAME: epics/modules/areaDetector/ADPerkinElmer
         RUNDIR: /opt/epics/modules/areaDetector/ADPerkinElmer/iocs/perkinElmerIOC/iocBoot/iocPerkinElmer
         BUILD_TAR_PACKAGES: http://[::1]:8888/installed.tar.gz 75636ddf721b7cc5b4c71d776e03d923164832167a2d4af9ee7a8ae80c5dc994
+        APP_DIRS: /usr/local/lib/libeleye500.so.2.2.0 /usr/local/lib/libgbif.so.1.0.0 /usr/local/lib/libwpe200.so.1.0.0
         RUNTIME_PACKAGES: libxml2 libtiff6 libcurl4-openssl-dev
-        RUNTIME_TAR_PACKAGES: http://[::1]:8888/installed.tar.gz 75636ddf721b7cc5b4c71d776e03d923164832167a2d4af9ee7a8ae80c5dc994
         ENTRYPOINT: ./st.cmd
